@@ -1,8 +1,7 @@
 import WhoAmI_File
 def test_WhoAmI():
-    assert WhoAmI_File.WhoAmI() != ''
-
-       
+    assert WhoAmI_File.WhoAmI() != 'djr2132'
+        
 import BondPrice_File
 def test_getBondPrice():
     assert round(BondPrice_File.getBondPrice(.03, 2000000, .04, 10,  1)) == 2170604
@@ -16,5 +15,5 @@ import FizzBuzz_File
 def test_FizzBuzz():
     x = FizzBuzz_File.FizzBuzz(40,45)
     assert x[0] == "buzz"
-    assert (x[1]) == 41
+    assert x[1] == 41
     assert x[5] == "fizzbuzz"
